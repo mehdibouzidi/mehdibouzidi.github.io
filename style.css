@@ -57,14 +57,14 @@ body {
   border-radius: 50%;
   object-fit: cover;
   object-position: center 80%;
-  border: 3px solid #21262d;
+  border: none;
   margin-bottom: 8px;
 }
 
 .name {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #e6edf3;
+  color: #72ef96;
 }
 
 .title {
@@ -76,7 +76,7 @@ body {
 .divider {
   width: 40px;
   border: none;
-  border-top: 2px solid #30363d;
+  border-top: 2px solid #72ef96;
   margin: 4px 0;
 }
 
@@ -106,7 +106,7 @@ body {
 
 .contact li i {
   font-size: 0.85rem;
-  color: #6e7681;
+  color: #72ef96;
   width: 14px;
 }
 
@@ -118,7 +118,7 @@ body {
 }
 
 .socials a {
-  color: #6e7681;
+  color: #72ef96;
   font-size: 1.25rem;
   transition: color 0.2s;
   text-decoration: none;
@@ -132,7 +132,7 @@ body {
 }
 
 .socials a:hover {
-  color: #e6edf3;
+  color: #72ef96;
 }
 
 /* ── Main ────────────────────────────────────────────────── */
@@ -147,7 +147,7 @@ body {
 .section-title {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #e6edf3;
+  color: #72ef96;
   margin-bottom: 10px;
 }
 
@@ -166,7 +166,7 @@ body {
 
 .skill-label {
   font-size: 0.78rem;
-  color: #8b949e;
+  color: #72ef96;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -177,6 +177,7 @@ body {
 
 .skill-label i {
   font-size: 0.8rem;
+  color: #72ef96;
 }
 
 .tags {
@@ -216,8 +217,8 @@ body {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: #30363d;
-  border: 2px solid #6e7681;
+  background-color: #72ef96;
+  border: 2px solid #0d1117;
 }
 
 .timeline-header {
