@@ -195,7 +195,7 @@ main > section {
 }
 .hero__text { grid-column: 1 / span 7; padding-top: var(--s-5); align-self: center; }
 .hero__notice {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   font-size: var(--t-small);
@@ -208,7 +208,7 @@ main > section {
   font-size: var(--t-lead);
   line-height: 1.6;
   max-width: 34em;
-  margin: var(--s-6) 0 var(--s-6);
+  margin: var(--s-5) 0 var(--s-6);
 }
 .hero__grid { align-items: stretch; }
 .hero__photo { grid-column: 8 / span 5; aspect-ratio: auto; height: calc(100svh - var(--nav) - 112px); max-height: 860px; min-height: 420px; }
@@ -227,16 +227,29 @@ main > section {
 }
 .frame:hover img { transform: scale(1.025); }
 
+/* client logos: real logos in their own colours, one height */
+.clients { margin-top: var(--s-6); padding-top: var(--s-5); border-top: 1px solid var(--line); }
+.clients__label { font-size: var(--t-label); font-weight: 500; color: var(--muted); margin-bottom: var(--s-4); }
+.clients__row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-4) var(--s-6); }
+.clients__row li { display: flex; align-items: center; height: 48px; }
+.clients__row img { height: 30px; width: auto; transition: transform .25s var(--ease); }
+.clients__row .clients__canal { height: 26px; }
+.clients__row .clients__sonelgaz { height: 48px; }
+.clients__row li:hover img { transform: translateY(-2px); }
+.clients__name { font-size: 18px; font-weight: 500; letter-spacing: -0.02em; white-space: nowrap; }
+
 /* the hero enters once on load */
 @keyframes enter { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
 [data-enter] .hero__notice,
 [data-enter] h1,
 [data-enter] .hero__lead,
 [data-enter] .btn-row,
+[data-enter] .clients,
 [data-enter] .hero__photo { animation: enter .8s var(--ease) both; }
 [data-enter] h1 { animation-delay: .06s; }
 [data-enter] .hero__lead { animation-delay: .14s; }
 [data-enter] .btn-row { animation-delay: .22s; }
+[data-enter] .clients { animation-delay: .3s; }
 [data-enter] .hero__photo { animation-delay: .1s; animation-duration: 1s; }
 
 /* ── Cards (one recipe) ──────────────────────────────────── */
@@ -366,7 +379,7 @@ main > section {
   .nav__links { display: none; }
   .hero__grid { row-gap: var(--s-6); }
   .hero__text { grid-column: 1 / -1; padding-top: 0; }
-  .hero__photo { grid-column: 1 / span 6; height: 40svh; min-height: 0; }
+  .hero__photo { grid-column: 1 / span 6; height: 28svh; min-height: 0; }
   .stats, .skills { grid-template-columns: repeat(2, 1fr); }
   .stat { min-height: 240px; }
   .job__head { grid-column: 1 / -1; margin-bottom: var(--s-4); }
@@ -383,6 +396,12 @@ main > section {
   .hero__photo img { object-position: center 30%; }
   .hero__notice { margin-bottom: var(--s-4); }
   .hero__lead { margin: var(--s-5) 0; }
+  .clients { margin-top: var(--s-6); }
+  .clients__row { gap: var(--s-3) var(--s-5); }
+  .clients__row img { height: 24px; }
+  .clients__row .clients__canal { height: 22px; }
+  .clients__row .clients__sonelgaz { height: 40px; }
+  .clients__name { font-size: 16px; }
   .btn-row { flex-direction: column; }
   .btn-row .btn { width: 100%; }
   .section h2 { margin-bottom: var(--s-6); }
