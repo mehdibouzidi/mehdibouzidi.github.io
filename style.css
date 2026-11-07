@@ -244,6 +244,7 @@ main > section {
 .clients__row img { height: 30px; width: auto; transition: transform .25s var(--ease); }
 .clients__row .clients__canal { height: 26px; }
 .clients__row .clients__sonelgaz { height: 48px; }
+.clients__row .clients__elafia { height: 36px; }
 .clients__row li:hover img { transform: translateY(-2px); }
 .clients__name { font-size: 18px; font-weight: 500; letter-spacing: -0.02em; white-space: nowrap; }
 
@@ -343,28 +344,17 @@ main > section {
 }
 
 /* Projects */
-.project {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 24px;
-  align-items: center;
-  padding: var(--s-7);
-}
-.project__text { grid-column: 1 / span 4; display: flex; flex-direction: column; gap: var(--s-4); }
-.project__text h3 { font-size: 28px; font-weight: 400; letter-spacing: -0.03em; margin-top: -8px; }
-.project__link { margin-top: var(--s-3); font-weight: 500; color: var(--action); }
-.project__shot {
-  grid-column: 6 / span 7;
-  display: block;
-  border: 1px solid var(--line);
-  border-radius: var(--r-md);
-  overflow: hidden;
-  background: var(--surface);
-  transition: transform .25s var(--ease);
-}
-.project__shot:hover { transform: translateY(-2px); }
-.project__shot img { width: 100%; transition: transform .6s var(--ease); }
+.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.project { display: flex; flex-direction: column; padding: 0; overflow: hidden; }
+.project__text { display: flex; flex-direction: column; gap: var(--s-3); padding: var(--s-5) var(--s-6); flex: 1; }
+.project__text .job__date { margin-bottom: 0; }
+.project__text h3 { font-size: 28px; font-weight: 400; letter-spacing: -0.03em; }
+.project__link { margin-top: auto; padding-top: var(--s-3); font-weight: 500; color: var(--action); }
+.project__shot { display: block; overflow: hidden; border-bottom: 1px solid var(--line); background: var(--g-alt); }
+.project__shot img { width: 100%; aspect-ratio: 2 / 1; object-fit: cover; object-position: top; transition: transform .6s var(--ease); }
 .project__shot:hover img { transform: scale(1.02); }
+.card.project:has(.project__shot:hover) { transform: translateY(-2px); }
+.card.project { transition: transform .25s var(--ease); }
 .browser { display: flex; gap: 6px; padding: 10px 12px; border-bottom: 1px solid var(--line); background: var(--g-alt); position: relative; z-index: 1; }
 .browser span { width: 9px; height: 9px; border-radius: 50%; background: rgba(27, 28, 25, .2); }
 
@@ -416,8 +406,7 @@ main > section {
   .stat { min-height: 240px; }
   .job__head { grid-column: 1 / -1; margin-bottom: var(--s-4); }
   .job__body { grid-column: 1 / -1; }
-  .project { row-gap: var(--s-6); }
-  .project__text, .project__shot { grid-column: 1 / -1; }
+  .projects { grid-template-columns: 1fr; }
 }
 
 /* ── Phone ───────────────────────────────────────────────── */
@@ -435,6 +424,7 @@ main > section {
   .clients__row img { height: 24px; }
   .clients__row .clients__canal { height: 22px; }
   .clients__row .clients__sonelgaz { height: 40px; }
+  .clients__row .clients__elafia { height: 30px; }
   .clients__name { font-size: 16px; }
   .btn-row { flex-direction: column; }
   .btn-row .btn { width: 100%; }
@@ -443,7 +433,8 @@ main > section {
   .stat { min-height: 0; }
   .stat__text { padding-top: var(--s-5); }
   .card { padding: var(--s-5); }
-  .project { padding: var(--s-5); }
+  .project { padding: 0; }
+  .project__text { padding: var(--s-5); }
   main > section { min-height: 0; }
   .closing { min-height: 0; }
   .foot__links { gap: var(--s-5); font-size: 16px; }
@@ -453,3 +444,5 @@ main > section {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+.h2--wide { max-width: none; }
