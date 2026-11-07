@@ -7,7 +7,7 @@
   <meta name="description" content="Mehdi Bouzidi, tech lead in Paris. Nine years building Java backends, CI/CD and Kubernetes delivery for Societe Generale, Banque de France and Canal+.">
   <meta name="page-type" content="service">
   <meta name="site-kind" content="other">
-  <meta name="theme-color" content="#f5f3ee">
+  <meta name="theme-color" content="#0b0d10">
   <meta property="og:title" content="Mehdi Bouzidi — Tech lead, Java backends and DevOps">
   <meta property="og:description" content="Nine years building Java backends and the pipelines that ship them, in Paris.">
   <meta property="og:image" content="https://mehdibouzidi.github.io/assets/portrait.jpg">
@@ -22,13 +22,13 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Schibsted+Grotesk:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Geist:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Direction: service page, one warm neutral + one green accent taken from the old brand green.
-       Type: Schibsted Grotesk (display + text), JetBrains Mono for dates and meta. Hero: split with portrait.
-       Close: type close on the dark band, wordmark set large. -->
+  <!-- Direction: dark technical. Near-black ground, off-white ink, one electric-blue accent.
+       Type: Geist (display + text), Geist Mono for labels, dates and meta. Hero: type-led over a faint grid.
+       Close: type close in a lit panel, wordmark set large. -->
 
   <header class="nav">
     <div class="wrap nav__row">
@@ -52,13 +52,14 @@
 
     <!-- HERO -->
     <section class="hero" data-enter>
+      <div class="hero__bg" aria-hidden="true"></div>
       <div class="wrap hero__grid">
         <div class="hero__text">
           <div class="hero__id">
             <figure class="hero__photo">
               <img src="assets/portrait.jpg" width="960" height="1200" alt="Mehdi Bouzidi" fetchpriority="high">
             </figure>
-            <p class="hero__notice">Tech lead at Societe Generale, Paris</p>
+            <p class="hero__notice"><span class="status" aria-hidden="true"></span>Tech lead &middot; Societe Generale<span class="hide-phone"> &middot; Paris</span></p>
           </div>
           <h1>I lead Java backend teams, design their systems and keep production running.</h1>
           <p class="hero__lead">I&rsquo;m Mehdi Bouzidi. For nine years I&rsquo;ve built backend systems for Societe Generale, Banque de France and Canal+. My last pipeline took deployments from three days to one hour.</p>
@@ -88,6 +89,7 @@
     <!-- RESULTS -->
     <section class="section" id="results">
       <div class="wrap">
+        <p class="eyebrow">01 / Results</p>
         <h2>Results from production. <span class="muted">Measured before and after, on live systems.</span></h2>
         <div class="stats">
           <article class="card stat">
@@ -117,6 +119,7 @@
     <!-- SKILLS -->
     <section class="section section--alt" id="skills">
       <div class="wrap">
+        <p class="eyebrow">02 / Skills</p>
         <h2>Skills. <span class="muted">From the Java service to the cluster it runs on.</span></h2>
         <div class="skills">
           <article class="card skill">
@@ -165,6 +168,7 @@
     <!-- EXPERIENCE -->
     <section class="section" id="experience" style="--h: 2">
       <div class="wrap">
+        <p class="eyebrow">03 / Experience</p>
         <h2>Experience. <span class="muted">Nine years across banking and media.</span></h2>
         <ol class="jobs">
           <li class="job">
@@ -237,30 +241,31 @@
     <!-- PROJECTS -->
     <section class="section section--alt" id="projects">
       <div class="wrap">
-        <h2 class="h2--wide">Projects. <span class="muted">Products and sites I&rsquo;ve designed.</span></h2>
+        <p class="eyebrow">04 / Projects</p>
+        <h2 class="h2--wide">Projects. <span class="muted">A platform of my own and a client website.</span></h2>
         <div class="projects">
-          <article class="card project">
-            <a class="project__shot" href="https://myimmodz.com/" target="_blank" rel="noopener" aria-label="Open the myimmodz platform">
-              <span class="browser" aria-hidden="true"><span></span><span></span><span></span></span>
+          <article class="card project project--platform">
+            <a class="project__shot" href="https://myimmodz.com/" target="_blank" rel="noopener" aria-label="Open myimmodz.com">
+              <span class="browser" aria-hidden="true"><span></span><span></span><span></span><span class="browser__url">https://myimmodz.com</span></span>
               <img src="assets/projects/myimmodz.jpg" width="1680" height="1050" alt="Home page of myimmodz, with a search panel over a view of Algiers" loading="lazy">
             </a>
             <div class="project__text">
-              <p class="job__date">Public platform &middot; Algeria</p>
+              <p class="project__meta"><span class="tag tag--platform">Platform</span>My own product &middot; Algeria</p>
               <h3>myimmodz</h3>
-              <p>A free directory of new housing projects in Algeria: private developers and their residences on one searchable map, in French and Arabic. Every fact links to its public source.</p>
-              <p class="project__link"><a class="link" href="https://myimmodz.com/" target="_blank" rel="noopener">Visit myimmodz.com <span aria-hidden="true">&nearr;</span></a></p>
+              <p>A free public directory of new housing projects in Algeria: private developers and their residences on one searchable map, in French and Arabic. Every fact links to its public source.</p>
+              <p class="project__link"><a class="link" href="https://myimmodz.com/" target="_blank" rel="noopener">myimmodz.com <span aria-hidden="true">&nearr;</span></a></p>
             </div>
           </article>
-          <article class="card project">
-            <a class="project__shot" href="https://www.elafiacatering.com/" target="_blank" rel="noopener" aria-label="Open the El Afia Catering website">
-              <span class="browser" aria-hidden="true"><span></span><span></span><span></span></span>
+          <article class="card project project--client">
+            <a class="project__shot" href="https://www.elafiacatering.com/" target="_blank" rel="noopener" aria-label="Open elafiacatering.com">
+              <span class="browser" aria-hidden="true"><span></span><span></span><span></span><span class="browser__url">https://www.elafiacatering.com</span></span>
               <img src="assets/projects/elafia-catering.jpg" width="1680" height="1050" alt="Home page of the El Afia Catering website" loading="lazy">
             </a>
             <div class="project__text">
-              <p class="job__date">Client website &middot; Algiers</p>
+              <p class="project__meta"><span class="tag tag--client">Client website</span>For El Afia Catering &middot; Algiers</p>
               <h3>El Afia Catering</h3>
               <p>The website of a caterer in Algiers that cooks 5,000 meals a day for company canteens, work camps, buffets and weddings. It presents the services, kitchens and chef, and turns visits into quote requests.</p>
-              <p class="project__link"><a class="link" href="https://www.elafiacatering.com/" target="_blank" rel="noopener">Visit elafiacatering.com <span aria-hidden="true">&nearr;</span></a></p>
+              <p class="project__link"><a class="link" href="https://www.elafiacatering.com/" target="_blank" rel="noopener">elafiacatering.com <span aria-hidden="true">&nearr;</span></a></p>
             </div>
           </article>
         </div>
@@ -273,6 +278,7 @@
   <footer class="closing" id="contact">
     <div class="wrap closing__grid">
       <div class="close">
+        <p class="eyebrow">05 / Contact</p>
         <h2>Need a tech lead for your backend? <span class="muted">Write to me in English or French.</span></h2>
         <div class="btn-row">
           <a class="btn btn--primary btn--xl" href="mailto:mehdi.bouzidi.92@gmail.com">Send an email
