@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-type="service" data-radius="soft" data-buttons="solid">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mehdi Bouzidi — Tech Lead &amp; Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mehdi Bouzidi — Tech lead, Java backends and DevOps</title>
+  <meta name="description" content="Mehdi Bouzidi, tech lead in Paris. Nine years building Java backends, CI/CD and Kubernetes delivery for Societe Generale, Banque de France and Canal+.">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta property="og:title" content="Mehdi Bouzidi — Tech lead, Java backends and DevOps">
+  <meta property="og:description" content="Nine years building Java backends and the pipelines that ship them, in Paris.">
+  <meta property="og:image" content="https://mehdibouzidi.github.io/assets/portrait.jpg">
+  <meta property="og:type" content="profile">
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9YEFMYHX3"></script>
   <script>
@@ -12,198 +20,229 @@
     gtag('js', new Date());
     gtag('config', 'G-M9YEFMYHX3');
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&family=Schibsted+Grotesk:wght@400;500&display=swap">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="layout">
+  <!-- Direction: service page, one warm neutral + one green accent taken from the old brand green.
+       Type: Schibsted Grotesk (display + text), JetBrains Mono for dates and meta. Hero: split with portrait.
+       Close: type close on the dark band, wordmark set large. -->
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="https://mehdibouzidi.github.io/mesg.JPEG" alt="Mehdi Bouzidi" class="avatar">
-        <h1 class="name">Mehdi Bouzidi</h1>
-        <p class="title">Tech Lead &ndash; DevOps</p>
-        <hr class="divider">
-        <p class="bio">9 years of experience in Software Engineering, focused on backend systems with strong Java expertise and some DevOps experience.</p>
-        <ul class="contact">
-          <li><i class="fa-regular fa-envelope"></i> mehdi.bouzidi.92@gmail.com</li>
-          <li><i class="fa-solid fa-location-dot"></i> Paris, FR</li>
-        </ul>
-        <div class="socials">
-          <a href="https://github.com/mehdibouzidi" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/mehdibouzidi/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://leetcode.com/u/mehdibouzidi/" target="_blank" rel="noopener" aria-label="LeetCode">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.59a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
-          </a>
-          <a href="https://www.hackerrank.com/profile/mehdi_bouzidi_92" target="_blank" rel="noopener" aria-label="HackerRank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.885 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v4.924H9.963V6.799a.258.258 0 0 0-.257-.258H9.05H8.044a.258.258 0 0 0-.258.258v10.403c0 .141.115.258.258.258h.706c.141 0 .256-.115.256-.258v-4.924h4.074v4.924c0 .141.116.258.258.258h.706c.141 0 .257-.115.257-.258V6.801a.26.26 0 0 0-.258-.026l-.748.024z"/></svg>
-          </a>
+  <header class="nav">
+    <div class="wrap nav__row">
+      <a class="skip-link" href="#top">Skip to content</a>
+      <a class="logo" href="#top" aria-label="Mehdi Bouzidi, back to top">
+        <span class="mark" aria-hidden="true">M</span>
+        <span>Mehdi Bouzidi</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a class="link" href="#results">Results</a>
+        <a class="link" href="#skills">Skills</a>
+        <a class="link" href="#experience">Experience</a>
+        <a class="link" href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--primary nav__btn" href="mailto:mehdi.bouzidi.92@gmail.com">Send an email</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" data-enter>
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <p class="hero__notice"><span class="dot" aria-hidden="true"></span>Tech lead at Societe Generale, Paris</p>
+          <h1>Tech lead for Java backends and the pipelines that ship them.</h1>
+          <p class="hero__lead">I&rsquo;m Mehdi Bouzidi. For nine years I&rsquo;ve built backend systems for Societe Generale, Banque de France and Canal+. My last pipeline took deployments from three days to one hour.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="mailto:mehdi.bouzidi.92@gmail.com">Send an email
+              <svg class="m-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--secondary" href="https://www.linkedin.com/in/mehdibouzidi/" target="_blank" rel="noopener">Open LinkedIn profile</a>
+          </div>
         </div>
-        <nav class="sidebar-nav">
-          <a href="index.html" class="sidebar-nav-link sidebar-nav-link--active">Resume</a>
-          <a href="content.html" class="sidebar-nav-link">Content</a>
-        </nav>
+        <figure class="hero__photo frame">
+          <img src="assets/portrait.jpg" width="960" height="1200" alt="Mehdi Bouzidi wearing headphones in front of the glass towers of La Défense" fetchpriority="high">
+        </figure>
       </div>
-    </aside>
+    </section>
 
-    <!-- MAIN -->
-    <main class="main">
-
-      <!-- CORE SKILLS -->
-      <section class="section">
-        <h2 class="section-title">Core Skills</h2>
-        <hr class="section-rule">
-        <div class="skills-grid">
-          <div class="skill-group">
-            <p class="skill-label"><i class="fa-solid fa-code"></i> Languages &amp; Frameworks</p>
-            <div class="tags">
-              <span class="tag">Java 8/11</span>
-              <span class="tag">Spring Boot</span>
-              <span class="tag">Apache Camel</span>
-              <span class="tag">ReactJS</span>
-              <span class="tag">AngularJS</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <p class="skill-label"><i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps</p>
-            <div class="tags">
-              <span class="tag">Azure / AKS</span>
-              <span class="tag">AWS</span>
-              <span class="tag">Kubernetes</span>
-              <span class="tag">Terraform</span>
-              <span class="tag">Jenkins</span>
-              <span class="tag">CI/CD</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <p class="skill-label"><i class="fa-solid fa-database"></i> Data &amp; Observability</p>
-            <div class="tags">
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">SQL Optimization</span>
-              <span class="tag">Elasticsearch</span>
-              <span class="tag">Grafana</span>
-              <span class="tag">JMeter</span>
-            </div>
-          </div>
-          <div class="skill-group">
-            <p class="skill-label"><i class="fa-solid fa-people-group"></i> Leadership</p>
-            <div class="tags">
-              <span class="tag">Tech Lead</span>
-              <span class="tag">Microservices</span>
-              <span class="tag">Code Review</span>
-              <span class="tag">Mentoring</span>
-            </div>
-          </div>
+    <!-- RESULTS -->
+    <section class="section" id="results">
+      <div class="wrap">
+        <h2>Results from production. <span class="muted">Measured before and after, on live systems.</span></h2>
+        <div class="stats">
+          <article class="card stat">
+            <p class="stat__figure">3&nbsp;days <span class="stat__arrow" aria-hidden="true">&rarr;</span> 1&nbsp;h</p>
+            <p class="stat__text">Deployment time on AKS, after building the Jenkins, Terraform and Kubernetes pipeline.</p>
+            <p class="stat__meta">Societe Generale</p>
+          </article>
+          <article class="card stat">
+            <p class="stat__figure">3&times;</p>
+            <p class="stat__text">Faster calls between services, by cutting latency and reshaping how they talk.</p>
+            <p class="stat__meta">Societe Generale</p>
+          </article>
+          <article class="card stat">
+            <p class="stat__figure">4&times;</p>
+            <p class="stat__text">Faster SQL queries on PostgreSQL through indexing and table sharding.</p>
+            <p class="stat__meta">Societe Generale</p>
+          </article>
+          <article class="card stat">
+            <p class="stat__figure">&minus;60%</p>
+            <p class="stat__text">Smaller generated PDF reports, which freed most of the database storage they used.</p>
+            <p class="stat__meta">Banque de France</p>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- EXPERIENCE -->
-      <section class="section">
-        <h2 class="section-title">Experience</h2>
-        <hr class="section-rule">
-        <ul class="timeline">
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="wrap">
+        <h2>Skills. <span class="muted">From the Java service to the cluster it runs on.</span></h2>
+        <div class="skills">
+          <article class="card skill">
+            <h3>Languages and frameworks</h3>
+            <ul class="tools">
+              <li><img src="assets/icons/java-original.svg" alt="" width="24" height="24">Java 8 and 11</li>
+              <li><img src="assets/icons/spring-original.svg" alt="" width="24" height="24">Spring Boot</li>
+              <li><img src="assets/icons/apache-original.svg" alt="" width="24" height="24">Apache Camel</li>
+              <li><img src="assets/icons/react-original.svg" alt="" width="24" height="24">React</li>
+              <li><img src="assets/icons/angularjs-original.svg" alt="" width="24" height="24">AngularJS</li>
+            </ul>
+          </article>
+          <article class="card skill">
+            <h3>Cloud and delivery</h3>
+            <ul class="tools">
+              <li><img src="assets/icons/azure-original.svg" alt="" width="24" height="24">Azure and AKS</li>
+              <li><img src="assets/icons/amazonwebservices-original-wordmark.svg" alt="" width="24" height="24">AWS</li>
+              <li><img src="assets/icons/kubernetes-original.svg" alt="" width="24" height="24">Kubernetes</li>
+              <li><img src="assets/icons/terraform-original.svg" alt="" width="24" height="24">Terraform</li>
+              <li><img src="assets/icons/jenkins-original.svg" alt="" width="24" height="24">Jenkins and CI/CD</li>
+            </ul>
+          </article>
+          <article class="card skill">
+            <h3>Data and observability</h3>
+            <ul class="tools">
+              <li><img src="assets/icons/postgresql-original.svg" alt="" width="24" height="24">PostgreSQL</li>
+              <li><img src="assets/icons/elasticsearch-original.svg" alt="" width="24" height="24">Elasticsearch</li>
+              <li><img src="assets/icons/grafana-original.svg" alt="" width="24" height="24">Grafana</li>
+              <li><img src="assets/icons/apache-original.svg" alt="" width="24" height="24">JMeter load tests</li>
+            </ul>
+          </article>
+          <article class="card skill">
+            <h3>Leading teams</h3>
+            <ul class="tools tools--plain">
+              <li>Three teams across France and India</li>
+              <li>Hiring and onboarding</li>
+              <li>Microservice design</li>
+              <li>Code review</li>
+              <li>Mentoring</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <li class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <strong>Tech Lead &ndash; DevOps</strong>
-                  <span class="timeline-company">Societe Generale &mdash; Paris</span>
-                </div>
-                <span class="timeline-date">2023 &ndash; Present</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Led and mentored 3 cross-functional engineering teams across France and India; led the improvement of onboarding and hiring processes.</li>
-                <li>Collaborated with business and product stakeholders to streamline communication and align technical delivery with business needs.</li>
-                <li>Designed and implemented key system features involving synchronous and asynchronous communication patterns.</li>
-                <li>Implemented CI/CD and AKS API deployments with Jenkins, Terraform, and Kubernetes, cutting deployment time from 3 days to 1 hour.</li>
-                <li>Set up full-stack observability using Grafana and Elasticsearch; conducted load testing with JMeter to ensure system reliability under stress.</li>
-                <li>Improved inter-service performance by 3x through latency reduction and optimized communication flows.</li>
-                <li>Achieved a 4x improvement in SQL query performance via indexing and table sharding techniques.</li>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" style="--h: 2">
+      <div class="wrap">
+        <h2>Experience. <span class="muted">Nine years across banking and media.</span></h2>
+        <ol class="jobs">
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2023 &ndash; now</p>
+              <h3>Tech lead, DevOps</h3>
+              <p class="job__org">Societe Generale, Paris</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Led and mentored three cross-functional teams in France and India, and reworked how they hire and onboard.</li>
+                <li>Worked with business and product owners so delivery matched what the business needed.</li>
+                <li>Designed core features built on synchronous and asynchronous messaging.</li>
+                <li>Built CI/CD and AKS deployments with Jenkins, Terraform and Kubernetes: three days down to one hour.</li>
+                <li>Set up observability with Grafana and Elasticsearch, and load-tested with JMeter before each release.</li>
+                <li>Made calls between services three times faster and SQL queries four times faster.</li>
               </ul>
-              <p class="timeline-skills"><strong>Skills:</strong> Azure, AKS, Kubernetes, Terraform, Jenkins, Grafana, Elasticsearch, JMeter, SQL Optimization, Microservices, CI/CD, Technical Leadership</p>
+              <p class="job__stack">Azure, AKS, Kubernetes, Terraform, Jenkins, Grafana, Elasticsearch, JMeter, SQL</p>
             </div>
           </li>
-
-          <li class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <strong>Senior Software Engineer</strong>
-                  <span class="timeline-company">Banque de France &mdash; Paris</span>
-                </div>
-                <span class="timeline-date">2021 &ndash; 2023</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Designed, developed and maintained RESTful WebServices and unit tests.</li>
-                <li>Analyzed and fixed bugs.</li>
-                <li>Optimized PDF size by 60%, significantly reducing database storage usage caused by report generation.</li>
-                <li>Improved user experience with implementation of custom front-end caching.</li>
-                <li>Presented technical solutions for business features to clients and conducted code reviews.</li>
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2021 &ndash; 2023</p>
+              <h3>Senior software engineer</h3>
+              <p class="job__org">Banque de France, Paris</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Designed, built and maintained REST web services with their unit tests.</li>
+                <li>Cut generated PDF size by 60%, freeing database storage taken by reports.</li>
+                <li>Added a custom front-end cache so screens loaded faster for users.</li>
+                <li>Presented technical solutions to the client and ran code reviews.</li>
               </ul>
-              <p class="timeline-skills"><strong>Skills:</strong> REST, Java, Unit Testing, AngularJS</p>
+              <p class="job__stack">Java, REST, unit testing, AngularJS</p>
             </div>
           </li>
-
-          <li class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <strong>Software Engineer</strong>
-                  <span class="timeline-company">Canal+ &mdash; Paris</span>
-                </div>
-                <span class="timeline-date">2019 &ndash; 2021</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Designed, developed and maintained RESTful web services to support secure payment workflows and distributor portal functionalities.</li>
-                <li>Integrated third-party payment providers, ensuring seamless transaction flows and system reliability.</li>
-                <li>Built CI/CD pipelines with Jenkins and managed deployments on AWS, improving delivery efficiency and release consistency.</li>
-                <li>Refactored core architecture to enhance maintainability, performance, and scalability across services.</li>
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2019 &ndash; 2021</p>
+              <h3>Software engineer</h3>
+              <p class="job__org">Canal+, Paris</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Built REST services for secure payments and the distributor portal.</li>
+                <li>Integrated third-party payment providers into the transaction flow.</li>
+                <li>Built Jenkins pipelines and ran deployments on AWS.</li>
+                <li>Refactored the core architecture for easier upkeep and better performance.</li>
               </ul>
-              <p class="timeline-skills"><strong>Skills:</strong> Java 8/11, Spring Boot, Apache Camel, AWS, PostgreSQL, ReactJS</p>
+              <p class="job__stack">Java 8 and 11, Spring Boot, Apache Camel, AWS, PostgreSQL, React</p>
             </div>
           </li>
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2011 &ndash; 2016</p>
+              <h3>Master&rsquo;s in applied mathematics</h3>
+              <p class="job__org">USTHB, Algiers</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Vice president of the operational research student club.</li>
+                <li>Speaks English, French and Arabic.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
+  </main>
+
+  <!-- CLOSE + FOOTER -->
+  <footer class="closing" id="contact">
+    <div class="wrap closing__grid">
+      <div class="close">
+        <h2>Need a tech lead for your backend? <span class="muted">Write to me in English or French.</span></h2>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--xl" href="mailto:mehdi.bouzidi.92@gmail.com">Send an email
+            <svg class="m-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <p class="close__mail">mehdi.bouzidi.92@gmail.com</p>
+      </div>
+      <div class="foot">
+        <ul class="foot__links">
+          <li><a class="link" href="https://github.com/mehdibouzidi" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="link" href="https://www.linkedin.com/in/mehdibouzidi/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a class="link" href="https://leetcode.com/u/mehdibouzidi/" target="_blank" rel="noopener">LeetCode</a></li>
+          <li><a class="link" href="https://www.hackerrank.com/profile/mehdi_bouzidi_92" target="_blank" rel="noopener">HackerRank</a></li>
         </ul>
-      </section>
-
-      <!-- EDUCATION -->
-      <section class="section">
-        <h2 class="section-title">Education</h2>
-        <hr class="section-rule">
-        <ul class="timeline">
-          <li class="timeline-item">
-            <span class="timeline-dot"></span>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <strong>Master&rsquo;s degree in Applied Mathematics</strong>
-                  <span class="timeline-company">University of Science and Technology Houari Boumediene</span>
-                </div>
-                <span class="timeline-date">2011 &ndash; 2016</span>
-              </div>
-              <ul class="timeline-bullets">
-                <li>Vice President of Operational Research students club.</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- OTHER -->
-      <section class="section">
-        <h2 class="section-title">Other</h2>
-        <hr class="section-rule">
-        <ul class="timeline-bullets standalone">
-          <li>Fluent in English, French and Arabic.</li>
-        </ul>
-      </section>
-
-    </main>
-  </div>
+        <p class="wordmark" aria-hidden="true">Mehdi Bouzidi</p>
+        <p class="legal">Paris, France &middot; &copy; 2026 Mehdi Bouzidi &middot; Logos from Devicon</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
