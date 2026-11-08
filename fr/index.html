@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mehdi Bouzidi — Tech lead Java et DevOps à Paris</title>
+  <meta name="description" content="Mehdi Bouzidi, tech lead à Paris. Neuf ans à mener des équipes Java et Spring Boot et à faire tourner la production sur Kubernetes, Azure et AWS.">
+  <meta name="author" content="Mehdi Bouzidi">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://mehdibouzidi.com/fr/">
+  <link rel="alternate" hreflang="en" href="https://mehdibouzidi.com/">
+  <link rel="alternate" hreflang="fr" href="https://mehdibouzidi.com/fr/">
+  <link rel="alternate" hreflang="x-default" href="https://mehdibouzidi.com/">
+  <meta name="theme-color" content="#0b0d10">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Share previews (LinkedIn, Slack, X, WhatsApp) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Mehdi Bouzidi">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:url" content="https://mehdibouzidi.com/fr/">
+  <meta property="og:title" content="Mehdi Bouzidi — Tech lead Java et DevOps">
+  <meta property="og:description" content="Je dirige des équipes backend Java, je conçois leurs systèmes et je garantis la stabilité de la production. Neuf ans à Paris : Société Générale, Banque de France, Canal+.">
+  <meta property="og:image" content="https://mehdibouzidi.com/assets/share-fr.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mehdi Bouzidi, tech lead Java et DevOps à Paris">
+  <meta property="profile:first_name" content="Mehdi">
+  <meta property="profile:last_name" content="Bouzidi">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mehdi Bouzidi — Tech lead Java et DevOps">
+  <meta name="twitter:description" content="Je dirige des équipes backend Java, je conçois leurs systèmes et je garantis la stabilité de la production.">
+  <meta name="twitter:image" content="https://mehdibouzidi.com/assets/share-fr.png">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mehdibouzidi.com/#person",
+      "name": "Mehdi Bouzidi",
+      "url": "https://mehdibouzidi.com/",
+      "image": "https://mehdibouzidi.com/assets/portrait.jpg",
+      "jobTitle": "Tech lead Java et DevOps",
+      "email": "mailto:mehdi.bouzidi.92@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Science and Technology Houari Boumediene"
+      },
+      "knowsLanguage": [
+        "en",
+        "fr",
+        "ar"
+      ],
+      "knowsAbout": [
+        "Java",
+        "Spring Boot",
+        "Microservices",
+        "Kubernetes",
+        "Azure AKS",
+        "AWS",
+        "Terraform",
+        "Jenkins",
+        "CI/CD",
+        "PostgreSQL",
+        "Elasticsearch",
+        "Grafana",
+        "Observability",
+        "Technical leadership",
+        "LLM multi-agent systems"
+      ],
+      "sameAs": [
+        "https://github.com/mehdibouzidi",
+        "https://www.linkedin.com/in/mehdibouzidi/",
+        "https://leetcode.com/u/mehdibouzidi/",
+        "https://www.hackerrank.com/profile/mehdi_bouzidi_92"
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "https://mehdibouzidi.com/fr/#page",
+      "url": "https://mehdibouzidi.com/fr/",
+      "name": "Mehdi Bouzidi — Tech lead Java et DevOps à Paris",
+      "inLanguage": "fr",
+      "mainEntity": {
+        "@id": "https://mehdibouzidi.com/#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mehdibouzidi.com/#site",
+      "url": "https://mehdibouzidi.com/",
+      "name": "Mehdi Bouzidi",
+      "publisher": {
+        "@id": "https://mehdibouzidi.com/#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "name": "myimmodz",
+      "url": "https://myimmodz.com/",
+      "description": "Annuaire public des projets immobiliers neufs des promoteurs privés en Algérie.",
+      "creator": {
+        "@id": "https://mehdibouzidi.com/#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "name": "El Afia Catering",
+      "url": "https://www.elafiacatering.com/",
+      "description": "Site d'un traiteur à Alger.",
+      "creator": {
+        "@id": "https://mehdibouzidi.com/#person"
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9YEFMYHX3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-M9YEFMYHX3');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Geist:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Direction: dark technical. Near-black ground, off-white ink, one electric-blue accent.
+       Type: Geist (display + text), Geist Mono for labels, dates and meta. Hero: type-led over a faint grid.
+       Close: type close in a lit panel, wordmark set large. -->
+
+  <header class="nav">
+    <div class="wrap nav__row">
+      <a class="skip-link" href="#top">Aller au contenu</a>
+      <a class="logo" href="#top" aria-label="Mehdi Bouzidi, retour en haut">
+        <span class="mark" aria-hidden="true">M</span>
+        <span>Mehdi Bouzidi</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a class="link" href="#results">Résultats</a>
+        <a class="link" href="#skills">Compétences</a>
+        <a class="link" href="#experience">Parcours</a>
+        <a class="link" href="#projects">Projets</a>
+        <a class="link" href="#contact">Contact</a>
+      </nav>
+      <a class="lang" href="/" hreflang="en" lang="en" aria-label="Read in English">EN</a>
+      <a class="btn btn--primary nav__btn" href="mailto:mehdi.bouzidi.92@gmail.com">M&rsquo;écrire</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" data-enter>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <div class="hero__id">
+            <figure class="hero__photo">
+              <img src="../assets/portrait.jpg" width="960" height="1200" alt="Portrait de Mehdi Bouzidi" fetchpriority="high" decoding="async">
+            </figure>
+            <p class="hero__notice"><span class="status" aria-hidden="true"></span>Tech lead &middot; Société Générale<span class="hide-phone"> &middot; Paris</span></p>
+          </div>
+          <h1>Je dirige des équipes backend Java, je conçois leurs systèmes et je garantis la stabilité de la production.</h1>
+          <p class="hero__lead">Je suis Mehdi Bouzidi. Depuis neuf ans, je construis des systèmes backend pour la Société Générale, la Banque de France et Canal+. Ma dernière chaîne CI/CD a fait passer les déploiements de trois jours à une heure.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="mailto:mehdi.bouzidi.92@gmail.com">M&rsquo;écrire
+              <svg class="m-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--secondary" href="https://www.linkedin.com/in/mehdibouzidi/" target="_blank" rel="me noopener">Voir mon profil LinkedIn</a>
+          </div>
+          <div class="clients">
+            <p class="clients__label">Entreprises pour lesquelles j&rsquo;ai développé</p>
+            <ul class="clients__row">
+              <li class="clients__mark"><img src="../assets/clients/meritis-mark.png" alt="" width="192" height="192" class="clients__meritis"><span class="clients__name">Meritis</span></li>
+              <li><img src="../assets/clients/societe-generale.svg" alt="Société Générale" width="148" height="40"></li>
+              <!-- Banque de France: logo file still to come, name set as text for now -->
+              <li class="clients__name">Banque de France</li>
+              <li><img src="../assets/clients/canal-plus.svg" alt="Canal+" width="110" height="28" class="clients__canal"></li>
+              <li><img src="../assets/clients/sonelgaz.png" alt="Sonelgaz" width="35" height="48" class="clients__sonelgaz"></li>
+              <!-- Intellix Web: logo file still to come, name set as text for now -->
+              <li class="clients__name">Intellix Web</li>
+              <li><img src="../assets/clients/elafia-catering.png" alt="El Afia Catering" width="757" height="111" class="clients__elafia"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section class="section" id="results">
+      <div class="wrap">
+        <p class="eyebrow">01 / Résultats</p>
+        <h2>Des résultats en production. <span class="muted">Mesurés avant et après, sur des systèmes réels.</span></h2>
+        <div class="stats">
+          <article class="card stat">
+            <p class="stat__figure">3&nbsp;jours <span class="stat__arrow" aria-hidden="true">&rarr;</span> 1&nbsp;h</p>
+            <p class="stat__text">Temps de déploiement sur AKS, après la mise en place de la chaîne Jenkins, Terraform et Kubernetes.</p>
+            <p class="stat__meta">Societe Generale</p>
+          </article>
+          <article class="card stat">
+            <p class="stat__figure">3&times;</p>
+            <p class="stat__text">Des appels entre services plus rapides, en réduisant la latence et en repensant leurs échanges.</p>
+            <p class="stat__meta">Societe Generale</p>
+          </article>
+          <article class="card stat">
+            <p class="stat__figure">4&times;</p>
+            <p class="stat__text">Des requêtes SQL plus rapides sur PostgreSQL, grâce à l&rsquo;indexation et au sharding des tables.</p>
+            <p class="stat__meta">Societe Generale</p>
+          </article>
+          <article class="card stat">
+            <p class="stat__figure">&minus;60&nbsp;%</p>
+            <p class="stat__text">Des rapports PDF plus légers, qui ont libéré l&rsquo;essentiel du stockage qu&rsquo;ils occupaient en base.</p>
+            <p class="stat__meta">Banque de France</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="wrap">
+        <p class="eyebrow">02 / Compétences</p>
+        <h2>Compétences. <span class="muted">Du service Java au cluster qui le fait tourner.</span></h2>
+        <div class="skills">
+          <article class="card skill">
+            <h3>Langages et frameworks</h3>
+            <ul class="tools">
+              <li><img src="../assets/icons/java-original.svg" alt="" width="24" height="24">Java 8 et 11</li>
+              <li><img src="../assets/icons/spring-original.svg" alt="" width="24" height="24">Spring Boot</li>
+              <li><img src="../assets/icons/apache-original.svg" alt="" width="24" height="24">Apache Camel</li>
+              <li><img src="../assets/icons/react-original.svg" alt="" width="24" height="24">React</li>
+              <li><img src="../assets/icons/angularjs-original.svg" alt="" width="24" height="24">AngularJS</li>
+            </ul>
+          </article>
+          <article class="card skill">
+            <h3>Cloud et livraison</h3>
+            <ul class="tools">
+              <li><img src="../assets/icons/azure-original.svg" alt="" width="24" height="24">Azure et AKS</li>
+              <li><img src="../assets/icons/amazonwebservices-original-wordmark.svg" alt="" width="24" height="24">AWS</li>
+              <li><img src="../assets/icons/kubernetes-original.svg" alt="" width="24" height="24">Kubernetes</li>
+              <li><img src="../assets/icons/terraform-original.svg" alt="" width="24" height="24">Terraform</li>
+              <li><img src="../assets/icons/jenkins-original.svg" alt="" width="24" height="24">Jenkins et CI/CD</li>
+            </ul>
+          </article>
+          <article class="card skill">
+            <h3>Données et observabilité</h3>
+            <ul class="tools">
+              <li><img src="../assets/icons/postgresql-original.svg" alt="" width="24" height="24">PostgreSQL</li>
+              <li><img src="../assets/icons/elasticsearch-original.svg" alt="" width="24" height="24">Elasticsearch</li>
+              <li><img src="../assets/icons/grafana-original.svg" alt="" width="24" height="24">Grafana</li>
+              <li><img src="../assets/icons/apache-original.svg" alt="" width="24" height="24">Tests de charge JMeter</li>
+            </ul>
+          </article>
+          <article class="card skill">
+            <h3>Management d&rsquo;équipe</h3>
+            <ul class="tools tools--plain">
+              <li>Trois équipes entre la France et l&rsquo;Inde</li>
+              <li>Recrutement et intégration</li>
+              <li>Conception de microservices</li>
+              <li>Revue de code</li>
+              <li>Mentorat</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience" style="--h: 2">
+      <div class="wrap">
+        <p class="eyebrow">03 / Parcours</p>
+        <h2>Parcours. <span class="muted">Neuf ans entre banque, médias et énergie.</span></h2>
+        <ol class="jobs">
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2023 &ndash; aujourd&rsquo;hui</p>
+              <h3>Tech lead DevOps</h3>
+              <p class="job__org">Société Générale, Paris</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Encadrement de trois équipes pluridisciplinaires en France et en Inde, et refonte du recrutement et de l&rsquo;intégration.</li>
+                <li>Travail avec les équipes métier et produit pour aligner les livraisons sur les besoins réels.</li>
+                <li>Conception de fonctionnalités clés reposant sur des échanges synchrones et asynchrones.</li>
+                <li>Mise en place du CI/CD et des déploiements AKS avec Jenkins, Terraform et Kubernetes : de trois jours à une heure.</li>
+                <li>Observabilité avec Grafana et Elasticsearch, et tests de charge JMeter avant chaque mise en production.</li>
+                <li>Appels entre services trois fois plus rapides et requêtes SQL quatre fois plus rapides.</li>
+              </ul>
+              <p class="job__stack">Azure, AKS, Kubernetes, Terraform, Jenkins, Grafana, Elasticsearch, JMeter, SQL</p>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2021 &ndash; 2023</p>
+              <h3>Ingénieur logiciel senior</h3>
+              <p class="job__org">Banque de France, Paris</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Conception, développement et maintenance de services web REST et de leurs tests unitaires.</li>
+                <li>Taille des PDF générés réduite de 60&nbsp;%, ce qui a libéré le stockage occupé par les rapports.</li>
+                <li>Ajout d&rsquo;un cache côté front pour que les écrans s&rsquo;affichent plus vite.</li>
+                <li>Présentation des solutions techniques au client et revues de code.</li>
+              </ul>
+              <p class="job__stack">Java, REST, tests unitaires, AngularJS</p>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2019 &ndash; 2021</p>
+              <h3>Ingénieur logiciel</h3>
+              <p class="job__org">Canal+, Paris</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Services REST pour le paiement sécurisé et l&rsquo;espace distributeurs.</li>
+                <li>Intégration de prestataires de paiement externes dans le parcours de transaction.</li>
+                <li>Chaînes Jenkins et déploiements sur AWS.</li>
+                <li>Refonte de l&rsquo;architecture pour une maintenance plus simple et de meilleures performances.</li>
+              </ul>
+              <p class="job__stack">Java 8 et 11, Spring Boot, Apache Camel, AWS, PostgreSQL, React</p>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2017 &ndash; 2019</p>
+              <h3>Ingénieur logiciel</h3>
+              <p class="job__org">ELIT, groupe Sonelgaz</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Développement du module RH de l&rsquo;ERP de Sonelgaz : paie, gestion des temps, absences, carrières et dossiers administratifs.</li>
+                <li>Participation à la conception générale du module de paie et développement de ses données de base.</li>
+                <li>Conception et développement du module de comptabilité de la paie.</li>
+                <li>Équipe de 20 développeurs répartis en six petites équipes.</li>
+              </ul>
+              <p class="job__stack">Java 7 et 8, Java EE, JSF, PrimeFaces, PostgreSQL, Maven</p>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2016 &ndash; 2017</p>
+              <h3>Développeur et chef de projet</h3>
+              <p class="job__org">Intellix Web</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Conception et développement d&rsquo;une plateforme de livraison de colis : réception, dispatch, livraison, retours, finance et tableau de bord.</li>
+                <li>Encadrement de deux développeurs, validation des spécifications et estimation des coûts.</li>
+                <li>Négociation avec le client et suivi de la qualité des livraisons.</li>
+              </ul>
+              <p class="job__stack">PHP, CakePHP, JavaScript, jQuery, MySQL, Google Maps API</p>
+            </div>
+          </li>
+          <li class="job">
+            <div class="job__head">
+              <p class="job__date">2011 &ndash; 2016</p>
+              <h3>Master en mathématiques appliquées</h3>
+              <p class="job__org">USTHB, Alger</p>
+            </div>
+            <div class="job__body">
+              <ul>
+                <li>Vice-président du club étudiant de recherche opérationnelle.</li>
+                <li>Parle anglais, français et arabe.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="projects">
+      <div class="wrap">
+        <p class="eyebrow">04 / Projets</p>
+        <h2 class="h2--wide">Projets. <span class="muted">Internes, personnels et pour des clients.</span></h2>
+        <div class="projects">
+          <article class="card project project--internal">
+            <div class="project__shot project__shot--static">
+              <span class="browser" aria-hidden="true"><span></span><span></span><span></span><span class="browser__url">Outil interne &middot; non public</span></span>
+              <!-- No public screenshot: the panel shows how the content agents hand work to each other. -->
+              <div class="flow" role="img" aria-label="Un brief de formation passe par trois agents IA, recherche, qualité et pédagogie, et ressort en cours SCORM">
+                <span class="flow__node">Brief</span>
+                <span class="flow__line" aria-hidden="true"></span>
+                <span class="flow__group">
+                  <span class="flow__label">Agents IA</span>
+                  <span class="flow__node flow__node--agent">Recherche</span>
+                  <span class="flow__node flow__node--agent">Qualité</span>
+                  <span class="flow__node flow__node--agent">Pédagogie</span>
+                </span>
+                <span class="flow__line" aria-hidden="true"></span>
+                <span class="flow__node flow__node--out">Cours SCORM</span>
+              </div>
+            </div>
+            <div class="project__text">
+              <p class="project__meta"><span class="tag tag--internal">Projet interne</span>Pour Meritis &middot; 2026</p>
+              <h3>Meritis Academy</h3>
+              <p>Une plateforme e-learning IA pour les collaborateurs de Meritis. En tant que tech lead, j&rsquo;ai conçu la chaîne multi-agents LLM qui rédige et vérifie les cours, et piloté 12 développeurs livrant deux à trois fonctionnalités par jour. Le MVP a été validé par la direction générale.</p>
+              <p class="project__link project__link--muted">Microsoft SSO &middot; SCORM &middot; GitHub Actions &middot; Azure</p>
+            </div>
+          </article>
+          <article class="card project project--platform">
+            <a class="project__shot" href="https://myimmodz.com/" target="_blank" rel="noopener" aria-label="Ouvrir myimmodz.com">
+              <span class="browser" aria-hidden="true"><span></span><span></span><span></span><span class="browser__url">https://myimmodz.com</span></span>
+              <img src="../assets/projects/myimmodz.jpg" width="1680" height="1050" alt="Page d&rsquo;accueil de myimmodz, avec un panneau de recherche sur une vue d&rsquo;Alger" loading="lazy">
+            </a>
+            <div class="project__text">
+              <p class="project__meta"><span class="tag tag--platform">Plateforme</span>Mon produit &middot; Algérie</p>
+              <h3>myimmodz</h3>
+              <p>Un annuaire public et gratuit des projets immobiliers neufs en Algérie : les promoteurs privés et leurs résidences sur une seule carte, en français et en arabe. Chaque information renvoie à sa source publique.</p>
+              <p class="project__link"><a class="link" href="https://myimmodz.com/" target="_blank" rel="noopener">myimmodz.com <span aria-hidden="true">&nearr;</span></a></p>
+            </div>
+          </article>
+          <article class="card project project--client">
+            <a class="project__shot" href="https://www.elafiacatering.com/" target="_blank" rel="noopener" aria-label="Ouvrir elafiacatering.com">
+              <span class="browser" aria-hidden="true"><span></span><span></span><span></span><span class="browser__url">https://www.elafiacatering.com</span></span>
+              <img src="../assets/projects/elafia-catering.jpg" width="1680" height="1050" alt="Page d&rsquo;accueil du site El Afia Catering" loading="lazy">
+            </a>
+            <div class="project__text">
+              <p class="project__meta"><span class="tag tag--client">Site client</span>Pour El Afia &middot; Alger</p>
+              <h3>El Afia Catering</h3>
+              <p>Le site d&rsquo;un traiteur algérois qui prépare 5&nbsp;000 repas par jour pour des cantines d&rsquo;entreprise, des bases de vie, des buffets et des mariages. Il présente les prestations, les cuisines et la cheffe, et transforme les visites en demandes de devis.</p>
+              <p class="project__link"><a class="link" href="https://www.elafiacatering.com/" target="_blank" rel="noopener">elafiacatering.com <span aria-hidden="true">&nearr;</span></a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CLOSE + FOOTER -->
+  <footer class="closing" id="contact">
+    <div class="wrap closing__grid">
+      <div class="close">
+        <p class="eyebrow">05 / Contact</p>
+        <h2>Besoin d&rsquo;un tech lead pour votre backend&nbsp;? <span class="muted">Écrivez-moi en français ou en anglais.</span></h2>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--xl" href="mailto:mehdi.bouzidi.92@gmail.com">M&rsquo;écrire
+            <svg class="m-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <p class="close__mail">mehdi.bouzidi.92@gmail.com</p>
+      </div>
+      <div class="foot">
+        <ul class="foot__links">
+          <li><a class="link" href="https://github.com/mehdibouzidi" target="_blank" rel="me noopener">GitHub</a></li>
+          <li><a class="link" href="https://www.linkedin.com/in/mehdibouzidi/" target="_blank" rel="me noopener">LinkedIn</a></li>
+          <li><a class="link" href="https://leetcode.com/u/mehdibouzidi/" target="_blank" rel="me noopener">LeetCode</a></li>
+          <li><a class="link" href="https://www.hackerrank.com/profile/mehdi_bouzidi_92" target="_blank" rel="me noopener">HackerRank</a></li>
+        </ul>
+        <p class="wordmark" aria-hidden="true">Mehdi Bouzidi</p>
+        <p class="legal">Paris, France &middot; &copy; 2026 Mehdi Bouzidi &middot; Logos Devicon</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
